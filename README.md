@@ -87,3 +87,12 @@ cat EcoliC1_nanopore_woadap.fastq | NanoFilt \
 -q MM -l NN > EcoliC1_nanopore_woadap_filt.fastq
 ```
 ***ACTIVIDAD 4: Indique el comando para NanoFilt utilizado por su grupo y justifique sus decisiones basado en la calidad de sus lecturas. Utilizando NanoPlot, compare las estadísticas de sus lecturas antes y después del filtro de calidad. (máximo una plana).***
+
+## Ensamblaje
+Para el ensamblaje utilizaremos Unicycler. En primer lugar, realizaremos un ensamblaje considerando solo las lecturas Illumina luego del filtrado con el siguiente comando. Los resultados de este ensamblaje se encontrarán finalmente en la carpeta que se indica con la opción **-o**.
+```
+unicycler -1 {lecturas_FW_pareadas} \
+-2 {lecturas_RV_pareadas}           \
+-s {lecturas_NoApareadas}           \
+-o {carpeta_salida}
+```
