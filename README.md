@@ -2,4 +2,8 @@
 ## Introducción
 Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación ustedes van a recibir una seguidilla de protocolos para la ejecución de ciertas funciones y las instrucciones respectivas.
 
-Para
+Les adelantamos que de aqui en adelante se establecerá el siguiente formato:
+
+'''
+codigo
+'''
