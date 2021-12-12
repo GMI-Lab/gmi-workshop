@@ -5,5 +5,6 @@ Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación 
 Les adelantamos que de aqui en adelante se establecerá el siguiente formato:
 
 ```
-codigo
+En este tipo de cuadros encontrará comandos, los que podrían tener que ser modificados según los datos de los distintos grupos.
 ```
+
