@@ -134,4 +134,13 @@ Utilizaremos la plataforma PATRIC para hacer la anotación general del mejor ens
 
 ![Readme1](https://user-images.githubusercontent.com/70078596/145698207-0ce8ecaa-4f8d-434c-b6e2-030a3983248b.png)
 
+Con la aproximación de la taxonomía del aislado problema, podemos ejecutar el Comprehensive Genome Analysis. Busque la herramienta entre los servicios y en la
+plataforma seleccione que el análisis comience con un genoma ensamblado, carque el archivo FastA con su ensamblaje, busque la taxonomía aproximada de su aislado entre las opciones y seleccione o cree una carpeta para el output.
+
 ![Readme2](https://user-images.githubusercontent.com/70078596/145698208-911f8cbc-4376-449f-a7cf-7f07ccc4c6d6.png)
+
+Finalmente, entre los resultados encontrará un resumen en formato HTML. Entre estos datos puede encontrar la estadística de la anotación del genoma, esquemas de los contigs y resultados de la anotación funcional de los genes codificados.
+
+***ACTIVIDAD 7: Indique las estadísticas de la anotación del ensamblaje y destaque algunos resultados en cuanto a genes de resistencia y de virulencia reportados. Reporte además la taxonomía de su cepa. Responda a lo siguiente: ¿Para qué podría ser relevante el número de CDS o de tRNAs codificados en el ensamblaje? (máximo una plana)***
+
+***ACTIVIDAD 8: Para hacer un resumen de la actividad, construyan un mapa de flujo de la información entre las actividades del taller. Indique los formatos de los archivos empleados, los programas y el formato de los distintos resultados obtenidos. Construya un resumen que destaque los puntos más importantes discutidos tanto en la clase como en el taller en un máximo de 200 palabras. Destaque la importancia del desarrollo de la genómica, la importancia o utilidad de la secuenciación de genomas y los principales resultados obtenidos por su grupo. (máximo dos planas)
