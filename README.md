@@ -12,9 +12,7 @@ En este tipo de cuadros encontrará comandos, los que podrían tener que ser mod
 ```
 [Formato 2]
 
-**Instrucciones:**
-
-**En este tipo de cuadro encontrará el detalle de lo que debe reportar del taller. No es necesario incluir una portada en el reporte, en la primera página indique la versión del curso (Bioinformática 2021), el número de grupo y sus integrantes. Para la confección del reporte considere hojas de tamaño carta con fuente Arial o Times New Roman en tamaño 11 puntos e interlineado sencillo. Cada actividad tiene indicada su extensión máxima, información que supere esa extensión no será revisada.**
+**ACTIVIDAD X: En este tipo de cuadro encontrará el detalle de lo que debe reportar del taller. No es necesario incluir una portada en el reporte, en la primera página indique la versión del curso (Bioinformática 2021), el número de grupo y sus integrantes. Para la confección del reporte considere hojas de tamaño carta con fuente Arial o Times New Roman en tamaño 11 puntos e interlineado sencillo. Cada actividad tiene indicada su extensión máxima, información que supere esa extensión no será revisada.**
 
 ## Configuraciones iniciales
 Utilizaremos en el taller alguna shell de UNIX que se pueda acceder mediante una terminal. Usuarios de Ubuntu o Mac OSX tienen directamente disponible la terminal. En caso de requerirlo, estudiantes pueden acceder de forma remota al servidor ADA del Grupo de Microbiología Integrativa (GMI). Para establecer la conexión vía SSH se utilizarán el usuario y contraseña que se indicarán en el taller. Para la conexión remota, es necesario tener instalada la herramienta de VPN de CISCO (disponible en https://soporte.uchile.cl/articulo/descargar-anyconnect/) y MobaXterm (disponible en https://soporte.uchile.cl/articulo/descargar-anyconnect/).
@@ -44,5 +42,4 @@ fastqc &
 ```
 Se desplegará una ventana. Hacer clic en “File” y luego navegar hasta encontrar las lecturas Illumina de su grupo. Puede cargar ambos archivos en la misma instrucción. Luego, el programa hará los cálculos y análisis para cada uno de los archivos.
 
-**ACTIVIDAD 1
-Describa las lecturas entregadas para su grupo en cuanto al número y largo de las lecturas. Describa también la calidad de las lecturas y algunos de los indicadores de calidad presentados en el programa. ¿Qué podría hacer para mejorar la calidad de la población de lecturas? Incluya los gráficos que justifiquen sus observaciones (máximo dos planas).**
+**ACTIVIDAD 1: Describa las lecturas entregadas para su grupo en cuanto al número y largo de las lecturas. Describa también la calidad de las lecturas y algunos de los indicadores de calidad presentados en el programa. ¿Qué podría hacer para mejorar la calidad de la población de lecturas? Incluya los gráficos que justifiquen sus observaciones (máximo dos planas).**
