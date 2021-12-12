@@ -144,3 +144,5 @@ Finalmente, entre los resultados encontrará un resumen en formato HTML. Entre e
 ***ACTIVIDAD 7: Indique las estadísticas de la anotación del ensamblaje y destaque algunos resultados en cuanto a genes de resistencia y de virulencia reportados. Reporte además la taxonomía de su cepa. Responda a lo siguiente: ¿Para qué podría ser relevante el número de CDS o de tRNAs codificados en el ensamblaje? (máximo una plana)***
 
 ***ACTIVIDAD 8: Para hacer un resumen de la actividad, construyan un mapa de flujo de la información entre las actividades del taller. Indique los formatos de los archivos empleados, los programas y el formato de los distintos resultados obtenidos. Construya un resumen que destaque los puntos más importantes discutidos tanto en la clase como en el taller en un máximo de 200 palabras. Destaque la importancia del desarrollo de la genómica, la importancia o utilidad de la secuenciación de genomas y los principales resultados obtenidos por su grupo. (máximo dos planas)***
+
+*Workshop made by Dr. Andrés Marcoleta C. & Dr. Camilo Berríos P.*
