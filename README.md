@@ -51,3 +51,12 @@ trimmomatic PE {input_FW} {imput_RV} \
 {output_FW_NoPareadas} {output_RV_ NoPareadas } \
 SLIDINGWINDOW:XX:YY LEADING:ZZ TRAILING:GG MINLEN:BB
 ```
+El comando indica primero que las lecturas son pareadas (PE) y luego se indican ambos archivos con las lecturas (input_FW e input_RV). Los siguientes cuatro parámetros son los archivos en los que las lecturas que son procesadas y que consiguen superar el umbral de tamaño mínimo definido son organizadas. En dos archivos son organizadas las lecturas en los que superan los filtros ambas lecturas del par (output_FW_paired y output_RV_paired) y los siguientes archivos para las lecturas que pierden su contraparte del par luego del procesamiento (output_FW_unpaired y output_RV_unpaired). Finalmente, luego de cada filtro se indican los valores a considerar:
+
+**SLIDINGWINDOW:XX:YY** --> Se configura una ventana que recorre la lectura, eliminando una región que esté por debajo de un umbral de calidad. XX representa el largo de bases de la ventana (generalmente 4) e YY representa la calidad mínima para que una ventana no sea eliminada (generalmente cercana a 23, depende de la calidad de las lecturas.
+
+**LEADING:ZZ** --> Remueve las primeras bases si tienen una calidad bajo ZZ (generalmente 3).
+
+**TRAILING:GG** --> Remueve las últimas bases si tienen una calidad bajo GG (generalmente 3).
+
+**MINLEN:BB** --> Elimina las lecturas que, luego del procesamiento, tengan un largo menor a BB (generalmente 35 pb).
