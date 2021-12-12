@@ -6,7 +6,6 @@ Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación 
 Les adelantamos que de aquí en adelante se establecerá el siguiente formato:
 
 [Formato 1]
-
 ```
 En este tipo de cuadros encontrará comandos, los que podrían tener que ser modificados según los datos de los distintos grupos.
 ```
@@ -96,3 +95,16 @@ unicycler -1 {lecturas_FW_pareadas} \
 -s {lecturas_NoApareadas}           \
 -o {carpeta_salida}
 ```
+Repetiremos el ensamblaje, pero ahora incluiremos las lecturas Nanopore con la opción (**-l**). Considerar una carpeta para el ensamblaje de lecturas cortas y otra para los resultados del ensamblaje híbrido.
+```
+unicycler -1 {lecturas_FW_pareadas}
+-2 {lecturas_RV_pareadas}          \
+-s {lecturas_NoApareadas}          \
+-l {lecturas_Nanopore}             \
+-o {carpeta_salida}
+```
+Los contigs que se generen del ensamblaje se encuentran en formato de secuencia de nucleótidos en un archivo FastA, pero también se puede encontrar entre los resultados el mapa que conecta a los contigs usando la información que se incluye al considerar lecturas pareadas. Para visualizar los mapas utilizamos el programa Bandage, el que se llama con el siguiente comando. En la pestaña File buscaremos la opción Load graph y navegaremos hasta encontrar el mapa del ensamblaje. Una vez cargado, hacer clic en la opción Draw graph. Entre la visualización y la estadística que se presenta, se puede tener una idea de que tan completo está el ensamblaje, considerando que la situación ideal es obtener un gran contig circular que represente el cromosoma bacteriano y los plásmidos que le acompañan, eventualmente.
+```
+bandage &
+```
+***ACTIVIDAD 5: Compare los mapas obtenidos por ambas estrategias de ensamblaje. ¿Qué impacto tiene la inclusión de las lecturas Nanopore en el resultado del ensamblaje en el caso de su grupo? (máximo una plana)***
