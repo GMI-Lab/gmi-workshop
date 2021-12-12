@@ -1,7 +1,7 @@
 # Taller de Bioinformática 2021: Análisis de datos genómicos obtenidos a partir de tecnologías de secuenciación masiva: ensamblaje y análisis de un genoma bacteriano.
 
 ## 1.- Introducción
-Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación ustedes van a recibir una seguidilla de protocolos para la ejecución de ciertas funciones y las instrucciones respectivas.
+Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación ustedes van a recibir una serie de protocolos para la ejecución de ciertas funciones en base a comandos y las instrucciones respectivas.
 
 Les adelantamos que de aquí en adelante se establecerá el siguiente formato:
 
