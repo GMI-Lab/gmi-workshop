@@ -1,6 +1,6 @@
 # Taller de Bioinformática 2021: Análisis de datos genómicos obtenidos a partir de tecnologías de secuenciación masiva: ensamblaje y análisis de un genoma bacteriano. Facultad de Ciencias, Universidad de Chile.
 
-## Introducción
+## 1.- Introducción
 Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación ustedes van a recibir una seguidilla de protocolos para la ejecución de ciertas funciones y las instrucciones respectivas.
 
 Les adelantamos que de aquí en adelante se establecerá el siguiente formato:
@@ -13,7 +13,7 @@ En este tipo de cuadros encontrará comandos, los que podrían tener que ser mod
 
 ***ACTIVIDAD X: En este tipo de cuadro encontrará el detalle de lo que debe reportar del taller. No es necesario incluir una portada en el reporte, en la primera página indique la versión del curso (Bioinformática 2021), el número de grupo y sus integrantes. Para la confección del reporte considere hojas de tamaño carta con fuente Arial o Times New Roman en tamaño 11 puntos e interlineado sencillo. Cada actividad tiene indicada su extensión máxima, información que supere esa extensión no será revisada.***
 
-## Configuraciones iniciales
+## 2.- Configuraciones iniciales
 Utilizaremos en el taller alguna shell de UNIX que se pueda acceder mediante una terminal. Usuarios de Ubuntu o Mac OSX tienen directamente disponible la terminal. En caso de requerirlo, estudiantes pueden acceder de forma remota al servidor ADA del Grupo de Microbiología Integrativa (GMI). Para establecer la conexión vía SSH se utilizarán el usuario y contraseña que se indicarán en el taller. Para la conexión remota, es necesario tener instalada la herramienta de VPN de CISCO (disponible en https://soporte.uchile.cl/articulo/descargar-anyconnect/) y MobaXterm (disponible en https://soporte.uchile.cl/articulo/descargar-anyconnect/).
 
 Si trabaja el taller desde su maquina con UNIX, puede instalar los programas necesarios en ambientes, donde sus dependencias son instaladas separadas del resto del sistema. Para ello, instale miniconda y luego configure bioconda, las instrucciones las encuentra aquí https://bioconda.github.io/user/install.html#install-conda. El siguiente comando creará un ambiente llamado *bactgen* que tendrá instalado los programas a utilizar durante el taller:
@@ -32,7 +32,7 @@ siguiente forma:
 ```
 (bactgen)usuario@maquina:~$
 ```
-## Análisis de calidad y filtrado de lecturas
+## 3.- Análisis de calidad y filtrado de lecturas
 Cada grupo contará con dos sets de lecturas: un set de lecturas provenientes de secuenciación Illumina apareadas (detalles) y otro proveniente de secuenciación con tecnología Illumina. En el caso de las lecturas Illumina, utilizaremos FastQC para evaluar las lecturas e identificar problemas comunes asociados a este tipo de tecnología.
 
 Para ejecutar el programa utilice el siguiente comando (Notar que el “&” al final del comando permite que la terminal quede disponible para nuevos comandos.):
@@ -87,7 +87,7 @@ cat EcoliC1_nanopore_woadap.fastq | NanoFilt \
 ```
 ***ACTIVIDAD 4: Indique el comando para NanoFilt utilizado por su grupo y justifique sus decisiones basado en la calidad de sus lecturas. Utilizando NanoPlot, compare las estadísticas de sus lecturas antes y después del filtro de calidad. (máximo una plana).***
 
-## Ensamblaje
+## 4.- Ensamblaje
 Para el ensamblaje utilizaremos Unicycler. En primer lugar, realizaremos un ensamblaje considerando solo las lecturas Illumina luego del filtrado con el siguiente comando. Los resultados de este ensamblaje se encontrarán finalmente en la carpeta que se indica con la opción **-o**.
 ```
 unicycler -1 {lecturas_FW_pareadas} \
@@ -108,3 +108,6 @@ Los contigs que se generen del ensamblaje se encuentran en formato de secuencia 
 bandage &
 ```
 ***ACTIVIDAD 5: Compare los mapas obtenidos por ambas estrategias de ensamblaje. ¿Qué impacto tiene la inclusión de las lecturas Nanopore en el resultado del ensamblaje en el caso de su grupo? (máximo una plana)***
+
+## 5.- Evaluación del ensamblaje
+Para evaluar el grado de fragmentación del ensamblaje y la cobertura promedio, utilizaremos la herramienta Quast. A este programa debemos entregarle el resultado del ensamblaje en formato FastA y las lecturas que dieron origen el ensamblaje. Los comandos se presentan a continuación. El informe que reporta Quast es generado en distintos formatos, los que se encontrarán en la carpeta que se le indique con la opción **-o**.
