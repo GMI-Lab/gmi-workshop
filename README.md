@@ -22,6 +22,16 @@ Utilizaremos en el taller alguna shell de UNIX que se pueda acceder mediante una
 Si trabaja el taller desde su maquina con UNIX, puede instalar los programas necesarios en ambientes, donde sus dependencias son instaladas separadas del resto del sistema. Para ello, instale miniconda y luego configure bioconda, las instrucciones las encuentra aquí https://bioconda.github.io/user/install.html#install-conda. El siguiente comando creará un ambiente llamado *bactgen* que tendrá instalado los programas a utilizar durante el taller.
 
 ```
-*conda create -n bactgen trimmomatic porechop nanoplot \*
-*fastqc unicycler quast bandage*
+conda create -n bactgen trimmomatic porechop nanoplot \
+fastqc unicycler quast bandage
+```
+Luego, es necesario activar el ambiente para tener disponibles los programas, para ello ejecute
+el siguiente comando:
+```
+conda activate bactgen
+```
+Con esto, en el prompt de la terminal debería indicarse que el ambiente está activo de la
+siguiente forma:
+```
+(bactgen)usuario@maquina:~$
 ```
