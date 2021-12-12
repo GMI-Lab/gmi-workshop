@@ -4,6 +4,6 @@ Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación 
 
 Les adelantamos que de aqui en adelante se establecerá el siguiente formato:
 
-'''
+```
 codigo
-'''
+```
