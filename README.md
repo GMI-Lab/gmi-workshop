@@ -43,3 +43,11 @@ fastqc &
 Se desplegará una ventana. Hacer clic en “File” y luego navegar hasta encontrar las lecturas Illumina de su grupo. Puede cargar ambos archivos en la misma instrucción. Luego, el programa hará los cálculos y análisis para cada uno de los archivos.
 
 **ACTIVIDAD 1: Describa las lecturas entregadas para su grupo en cuanto al número y largo de las lecturas. Describa también la calidad de las lecturas y algunos de los indicadores de calidad presentados en el programa. ¿Qué podría hacer para mejorar la calidad de la población de lecturas? Incluya los gráficos que justifiquen sus observaciones (máximo dos planas).**
+
+Basado en lo observado sobre la calidad de las lecturas, utilice Trimmomatic para limpiar las secuencias de las regiones con peores calidades. Para ello el comando tiene la siguiente estructura. Notar que en este comando y los que vienen en la guía, los nombres de archivos a reemplazar por los propios están indicados entre llaves ( **{}** ), no debe dejar estos caracteres al hacer el reemplazo.
+```
+trimmomatic PE {input_FW} {imput_RV} \
+{output_FW_pareadas} {output_RV_pareadas} \
+{output_FW_NoPareadas} {output_RV_ NoPareadas } \
+SLIDINGWINDOW:XX:YY LEADING:ZZ TRAILING:GG MINLEN:BB
+```
