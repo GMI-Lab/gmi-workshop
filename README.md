@@ -132,3 +132,6 @@ quast.py {resultado_ensamblaje}   \
 ## 6.- Anotación del genoma bacteriano
 Utilizaremos la plataforma PATRIC para hacer la anotación general del mejor ensamblaje obtenido. Para ellos cree una cuenta en PATRIC (https://patricbrc.org/). Primero debemos asignar la taxonomía del aislado problema. Para ello, entre los servicios identifique la herramienta Similar Genome Finder, que le permitirá buscar aislados en la base de datos similares al suyo. Cargue su ensamblaje en formato FastA y ejecute la herramienta.
 
+![Readme1](https://user-images.githubusercontent.com/70078596/145698207-0ce8ecaa-4f8d-434c-b6e2-030a3983248b.png)
+
+![Readme2](https://user-images.githubusercontent.com/70078596/145698208-911f8cbc-4376-449f-a7cf-7f07ccc4c6d6.png)
