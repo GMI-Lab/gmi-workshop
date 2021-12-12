@@ -9,3 +9,5 @@ Les adelantamos que de aqui en adelante se establecerá el siguiente formato:
 En este tipo de cuadros encontrará comandos, los que podrían tener que ser modificados según los datos de los distintos grupos.
 ```
 
+**"Instrucciones:
+En este tipo de cuadro encontrará el detalle de lo que debe reportar del taller. No es necesario incluir una portada en el reporte, en la primera página indique la versión del curso (Bioinformática 2021), el número de grupo y sus integrantes. Para la confección del reporte considere hojas de tamaño carta con fuente Arial o Times New Roman en tamaño 11 puntos e interlineado sencillo. Cada actividad tiene indicada su extensión máxima, información que supere esa extensión no será revisada."**
