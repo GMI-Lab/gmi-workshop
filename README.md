@@ -60,3 +60,23 @@ El comando indica primero que las lecturas son pareadas (PE) y luego se indican 
 - **TRAILING:GG** --> Remueve las últimas bases si tienen una calidad bajo GG (generalmente 3).
 
 - **MINLEN:BB** --> Elimina las lecturas que, luego del procesamiento, tengan un largo menor a BB (generalmente 35 pb).
+
+**ACTIVIDAD 2: Indique el comando para Trimmomatic utilizado por su grupo y justifique sus decisiones basado en la calidad de sus lecturas. Utilizando FastQC, compare las estadísticas de sus lecturas antes y después del filtro de calidad. (máximo una plana).**
+
+Finalmente, para el ensamblaje del genoma bacteriano se pueden utilizar las lecturas desapareadas, para ello podemos reunirlas en un solo archivo con el siguiente comando:
+```
+cat {output_FW_NoPareadas} {output_RV_NoPareadas} \
+> {lecturas_NoPareadas}
+```
+Ahora, realizaremos el procedimiento análogo para las lecturas Nanopore. Primero, debemos quitar los adaptadores unidos a las secuencias de DNA cuando se construye la biblioteca que se secuenció. Para ello utilizamos Porechop con el comando siguiente:
+```
+porechop -i {lecturas_Nanopore_originales} \
+-o {lecturas_Nanopore_SinAdaptadores} \
+--threads 8
+```
+Una vez removidos los adaptadores, utilizaremos NanoPlot para hacer la evaluación de la calidad de las lecturas. El comando se indica a continuación, en el se indica una carpeta donde se escriben los archivos de salida. La opción **--plots dot** indica que los gráficos que se construyen muestran cada lectura como un punto y no hace una aproximación en forma de hexágonos, que es la opción por defecto.
+```
+NanoPlot --fastq {lecturas_Nanopore_SinAdaptadores} \
+-t 8 --plots dot -o {salida_carpeta}
+```
+**ACTIVIDAD 3: Describa la calidad de las lecturas de secuenciación Nanopore de su grupo. Considere la estadística calculada por NanoPlot y algunos de sus gráficos. ¿Aplicaría algún filtro para mejorar la estadística de la población de lecturas? (máximo una plana).**
