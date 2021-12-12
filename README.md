@@ -111,3 +111,24 @@ bandage &
 
 ## 5.- Evaluación del ensamblaje
 Para evaluar el grado de fragmentación del ensamblaje y la cobertura promedio, utilizaremos la herramienta Quast. A este programa debemos entregarle el resultado del ensamblaje en formato FastA y las lecturas que dieron origen el ensamblaje. Los comandos se presentan a continuación. El informe que reporta Quast es generado en distintos formatos, los que se encontrarán en la carpeta que se le indique con la opción **-o**.
+```
+quast.py {resultado_ensamblaje}   \
+-1 {lecturas_FW_pareadas}         \
+-2 {lecturas_RV_pareadas}         \
+--single {lecturas_NoPareadas} -o {carpeta_resultados} -t
+8
+```
+Ahora, el comando para analizar el resultado del ensamblaje considerando una estrategia híbrida:
+```
+quast.py {resultado_ensamblaje}   \
+-1 {lecturas_FW_pareadas}         \
+-2 {lecturas_RV_pareadas}         \
+--single {lecturas_NoPareadas}    \
+--nanopore {lecturas_Nanopore} -o {carpeta_resultados} -t
+8
+```
+***ACTIVIDAD 6: Reporte la calidad de sus ensamblajes basadas en las estadísticas calculadas por Quast. Basado en estos resultados, ¿Qué impacto sobre la estadística tuvo la incorporación de las lecturas largas de tecnología Nanopore sobre los resultados del ensamblaje? La versión HTML de los resultados de Quast incluye diagramas y mapas que pueden considerarse para la respuesta. (máximo una plana)***
+
+## 6.- Anotación del genoma bacteriano
+Utilizaremos la plataforma PATRIC para hacer la anotación general del mejor ensamblaje obtenido. Para ellos cree una cuenta en PATRIC (https://patricbrc.org/). Primero debemos asignar la taxonomía del aislado problema. Para ello, entre los servicios identifique la herramienta Similar Genome Finder, que le permitirá buscar aislados en la base de datos similares al suyo. Cargue su ensamblaje en formato FastA y ejecute la herramienta.
+
