@@ -1,4 +1,4 @@
-# Taller de Bioinformática 2021: Análisis de datos genómicos obtenidos a partir de tecnologías de secuenciación masiva: ensamblaje y análisis de un genoma bacteriano. Facultad de Ciencias, Universidad de Chile.
+# Taller de Bioinformática 2021: Análisis de datos genómicos obtenidos a partir de tecnologías de secuenciación masiva: ensamblaje y análisis de un genoma bacteriano.
 
 ## 1.- Introducción
 Bienvenidos al repositorio de nuestro taller de Bioinformatica, a continuación ustedes van a recibir una seguidilla de protocolos para la ejecución de ciertas funciones y las instrucciones respectivas.
@@ -145,4 +145,4 @@ Finalmente, entre los resultados encontrará un resumen en formato HTML. Entre e
 
 ***ACTIVIDAD 8: Para hacer un resumen de la actividad, construyan un mapa de flujo de la información entre las actividades del taller. Indique los formatos de los archivos empleados, los programas y el formato de los distintos resultados obtenidos. Construya un resumen que destaque los puntos más importantes discutidos tanto en la clase como en el taller en un máximo de 200 palabras. Destaque la importancia del desarrollo de la genómica, la importancia o utilidad de la secuenciación de genomas y los principales resultados obtenidos por su grupo. (máximo dos planas)***
 
-*Workshop made by Dr. Andrés Marcoleta C. & Dr. Camilo Berríos P.*
+*Workshop made by Dr. Andrés Marcoleta C. & Dr. Camilo Berríos P., Facultad de Ciencias, Universidad de Chile.*
