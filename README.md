@@ -33,7 +33,7 @@ siguiente forma:
 (bactgen)usuario@maquina:~$
 ```
 ## 3.- Análisis de calidad y filtrado de lecturas
-Utilizaremos como ejemplo el resultado de secuenciación de la cepa de *Escherichia coli* C41 previamente publicadas (https://zenodo.org/record/940733#.Ybkgqr1ByCg). El set consiste enlecturas provenientes de secuenciación Illumina apareadas y otro proveniente de secuenciación con tecnología Nanopore. 
+Utilizaremos como ejemplo el resultado de secuenciación de la cepa de *Escherichia coli* C41 previamente publicadas (https://zenodo.org/record/940733#.Ybkgqr1ByCg). El set consiste en lecturas provenientes de secuenciación Illumina apareadas y otro proveniente de secuenciación con tecnología Nanopore. 
 
 En el caso de las lecturas Illumina, utilizaremos FastQC para evaluar las lecturas e identificar problemas comunes asociados a este tipo de tecnología. Para ejecutar el programa utilice el siguiente comando (Notar que el “&” al final del comando permite que la terminal quede disponible para nuevos comandos.):
 ```
