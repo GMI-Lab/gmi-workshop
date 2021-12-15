@@ -72,7 +72,7 @@ porechop -i {lecturas_Nanopore_originales} \
 -o {lecturas_Nanopore_SinAdaptadores} \
 --threads 8
 ```
-Una vez removidos los adaptadores, utilizaremos NanoPlot para hacer la evaluación de la calidad de las lecturas. El comando se indica a continuación, en el se indica una carpeta donde se escriben los archivos de salida. La opción **--plots dot** indica que los gráficos que se construyen muestran cada lectura como un punto y no hace una aproximación en forma de hexágonos, la que es la opción por defecto.
+Una vez removidos los adaptadores, utilizaremos NanoPlot para hacer la evaluación de la calidad de las lecturas. El comando se indica a continuación, ojo que un argumento requiere de una carpeta donde se escriben los archivos de salida. La opción **--plots dot** indica que los gráficos que se construyen muestran cada lectura como un punto y no hace una aproximación en forma de hexágonos, la que es la opción por defecto.
 ```
 NanoPlot --fastq {lecturas_Nanopore_SinAdaptadores} \
 -t 8 --plots dot -o {salida_carpeta}
