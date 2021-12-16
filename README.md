@@ -133,7 +133,7 @@ Utilizaremos la plataforma PATRIC para hacer la anotación general del mejor ens
 ![Readme1](https://user-images.githubusercontent.com/70078596/145698207-0ce8ecaa-4f8d-434c-b6e2-030a3983248b.png)
 
 Con la aproximación de la taxonomía del aislado problema, podemos ejecutar el Comprehensive Genome Analysis. Busque la herramienta entre los servicios y en la
-plataforma seleccione que el análisis comience con un genoma ensamblado, carque el archivo FastA con su ensamblaje, busque la taxonomía aproximada de su aislado entre las opciones y seleccione o cree una carpeta para el output.
+plataforma seleccione que el análisis comience con un genoma ensamblado, cargue el archivo FastA con su ensamblaje, busque la taxonomía aproximada de su aislado entre las opciones y seleccione o cree una carpeta para el output.
 
 ![Readme2](https://user-images.githubusercontent.com/70078596/145698208-911f8cbc-4376-449f-a7cf-7f07ccc4c6d6.png)
 
